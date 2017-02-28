@@ -5,9 +5,9 @@ Adapted from https://github.com/felixhummel/playing-with-kafka-nifi-elasticsearc
 Differences
 -----------
 * produce.py python script runs in a python container
- * Necessary to avoid using KAFKA_ADVERTISED_HOST_NAME and needing to use host mac IP address
+    * Necessary to avoid using KAFKA_ADVERTISED_HOST_NAME and needing to use host mac IP address
 * Eliminated dependency on make - can run solely with docker-compose commands
- * Removed waiting_for_nifi.sh and incorporated it in new nifi-init container
+    * Removed waiting_for_nifi.sh and incorporated it in new nifi-init container
 * Automate nifi template upload
 * Automate nifi template instantiation
 
