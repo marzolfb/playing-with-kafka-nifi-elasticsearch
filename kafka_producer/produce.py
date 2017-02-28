@@ -15,7 +15,7 @@ from kafka import KafkaProducer
 
 
 TOPIC = 'foo'
-producer = KafkaProducer()
+producer = KafkaProducer(bootstrap_servers=['kafka:9092'])
 
 
 def send(thing):

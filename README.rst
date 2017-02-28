@@ -1,3 +1,24 @@
+Intro
+=====
+Adapted from https://github.com/felixhummel/playing-with-kafka-nifi-elasticsearch
+
+Differences
+-----------
+* produce.py python script runs in a python container
+  * Necessary to avoid using KAFKA_ADVERTISED_HOST_NAME and needing to use host mac IP address
+* Eliminated dependency on make - can run solely with docker-compose commands
+  * Removed waiting_for_nifi.sh and incorporated it in new nifi-init container
+* Automate nifi template upload
+* Automate nifi template instantiation
+
+
+Todo:
+* [ ] Automate nifi flow execution / processor(s) startup
+
+----
+
+From the original repo:
+
 Usage
 =====
 Run things via docker compose and get a URL to NiFi::
